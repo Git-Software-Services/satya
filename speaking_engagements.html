@@ -85,13 +85,14 @@
             <!--end site header-->
    </div>
 <div class="hero-area">
-    <div class="page-header parallax" style="background-image:url(images/209157418.jpeg)"><div><div></div></div></div>
+    <div class="page-header parallax" style="background-image:url(images/211024691.jpeg)"><div><div></div></div></div>
 </div>
 <!-- Notive Bar -->
 <div class="notice-bar">
       <div class="container">
         <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
             <li class="active">Speaking Engagements</li>
         </ol>
     </div>
@@ -129,10 +130,11 @@
                                         <li class="lindedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                     </ul>
                                     <div class="post-actions">
-                                    	<a href="#" class="btn btn-primary">Book Online</a>
-                                    	<a href="membership.html" class="btn btn-default">Become a member</a>
+                                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Request Information</a>
+                                    	<!-- <a href="membership.html" class="btn btn-default">Become a member</a> -->
                                     </div>
                                 </div>
+                                
                                 
                                 <div id="sampletab2" class="tab-pane">
                                 	<div class="row">
@@ -159,48 +161,90 @@
                                 </div>
                            	</div>
                        	</div>
-                  	</div>
+                      </div>
+                      
+                      <!-- Inquiry Form Modal Box -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"  aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Speaking Engagement Inquiry Form</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>First Name</label>
+                                    <input type="text" class="form-control">
+                                   </div>
+                                <div class="col-md-6">
+                                    <label>Last Name</label>
+                                    <input type="text" class="form-control">
+                                   </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control">
+                                   </div>
+                                <div class="col-md-6">
+                                    <label>Phone</label>
+                                    <input type="text" class="form-control">
+                                   </div>
+                              </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Subject</label>
+                                    <select class="selectpicker form-control">
+                                        <option disabled selected>Select one</option>
+                                        <option>Speaking Engagement for Corporations</option>
+                                        <option>Speaking Engagement for Schools</option>
+                                        <option>Courageous Conversations</option>
+                                        <option>Satya Yoga Trip</option>
+                                    </select>
+                                   </div>
+                                <div class="col-md-6">
+                                    <label>Phone</label>
+                                    <input type="text" class="form-control datepicker" data-provide="datepicker">
+                                   </div>
+                              </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Submit Form</button>
+                    </div>
+                </div>
+            </div>
+        </div>
                     
                     <div class="col-md-4 sidebar right-sidebar">
                         
-                    	<div class="widget sidebar-widget widget_upcoming_events box-style1">
-                        	<h3 class="widget-title">Upcoming Events</h3>
-                            <ul>
-                            	<li>
-                                	<a href="event-single.html">An Artist Combing the Shores of Time</a>
-                                    <span class="meta-data"><i class="fa fa-calendar"></i> Wednesday(20 May, 2015), 05:00pm - 08:00pm</span>
-                                </li>
-                            	<li>
-                                	<a href="event-single.html">We Come This Far by Faith</a>
-                                    <span class="meta-data"><i class="fa fa-calendar"></i> Monday(01 June, 2015), 10:00am - 01:00pm</span>
-                                </li>
-                            	<li>
-                                	<a href="event-single.html">Metal and Wire: Ancient Adornment</a>
-                                    <span class="meta-data"><i class="fa fa-calendar"></i> Thursday(23 July, 2015), 11:00am - 02:00pm</span>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                    	<div class="widget sidebar-widget widget_recent_posts box-style1">
-                        	<h3 class="widget-title">Recent News</h3>
-                            <ul>
-                            	<li>
-                                	<a href="blog-single.html"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a>
-                                	<a href="blog-single.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                                    <span class="meta-data">Posted on April 14, 2015</span>
-                                </li>
-                            	<li>
-                                	<a href="blog-single.html"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a>
-                                	<a href="blog-single.html">Happy holidays to everyone!</a>
-                                    <span class="meta-data">Posted on April 11, 2015</span>
-                                </li>
-                            	<li>
-                                	<a href="blog-single.html"><img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="" class="img-thumbnail"></a>
-                                	<a href="blog-single.html">Potter working a piece of clay</a>
-                                    <span class="meta-data">Posted on April 09, 2015</span>
-                                </li>
-                            </ul>
-                        </div>
+                            <div class="widget widget_special_events">
+                                    <h3 class="widget-title">Special Events</h3>
+                                    <div class="widget_special_events_in">
+                                    
+                                        <div class="event-item format-standard">
+                                            <!-- <a href="#" class="media-box event-featured-img"><img src="images/rainbow_hands.png" alt=""></a> -->
+                                            <div class="meta-data alt">
+                                                <div>October 21, 2018</div>
+                                                <div><a href="http://www.allatoonahs.com/">Allatoona High School</a></div>
+                                            </div>
+                                            <h3 class="post-title"><a href="#">Diversity and Inclusion Student Speaking Engagement</a></h3>
+                                            <!-- <a href="events.html" class="basic-link">View details</a> -->
+                                        </div>
+                                        
+                                        <div class="event-item format-standard">
+                                            <div class="meta-data alt">
+                                                <div>TBD</div>
+                                                <div><a href="http://www.allatoonahs.com/">Walton High School</a></div>
+                                            </div>
+                                            <h3 class="post-title"><a href="#">Diversity and Inclusion Student Speaking Engagement</a></h3>
+                                            <!-- <a href="events.html" class="basic-link">View details</a> -->
+                                        </div>
+                                        
+                                    </div>
+                                </div> 
                         
                     </div>
                	</div>
